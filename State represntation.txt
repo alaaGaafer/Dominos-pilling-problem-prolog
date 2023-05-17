@@ -1,0 +1,4 @@
+In the code we represent a state in this shape (x1,y1,x2,y2,p)
+where x1,y1 are the coordinates of the first piece of domino and x2,y2 is the second piece as the domino holds 2 places, the p is the position of the domino and it takes 2 values h,v (horizntal,vertical). 
+
+the final ouput are lists where each individual list has this shape (x1,y1,x2,y2,p) for 2 or 3 times depending the possible number of dominos to be placed on the board
