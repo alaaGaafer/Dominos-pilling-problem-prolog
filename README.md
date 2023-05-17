@@ -1,18 +1,18 @@
-## Getting Started
+The Domino Placement Solver is a Prolog project that aims to solve the problem of placing domino pieces on a board of given dimensions. The project offers both informed and uninformed search algorithms to find valid placements for dominos on the board.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The project consists of the following components:
 
-## Folder Structure
+Board Creation: The project takes the dimensions of the board as a parameter and generates the board accordingly. The board is represented as a grid of squares.
 
-The workspace contains two folders by default, where:
+Valid Placement: The project ensures that dominos are placed in valid positions on the board. A valid placement means that the domino occupies two adjacent squares either horizontally or vertically and does not overlap with any "bomb" squares.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Uninformed Search: The project utilizes an uninformed search algorithm, specifically depth-first search, to explore all possible placements of dominos on the board. It generates and displays all valid placement configurations, considering different numbers of dominos.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Informed Search: The project also provides an informed search algorithm to optimize the placement of dominos. It focuses on finding configurations that maximize the number of dominos placed on the board. Only the cases with the maximum possible number of dominos are displayed.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Graphical User Interface (GUI): The project includes a Java-based GUI that interacts with the Prolog code. The GUI prompts the user to enter a query, including the board dimensions and specific domino placement constraints. It also allows the user to select either the informed or uninformed search approach. The results of the search are displayed within the GUI.
 
-## Dependency Management
+Example Query:
+solve(3,3,(1,3),(2,1),Dominos)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Overall, the Domino Placement Solver project provides a comprehensive solution for placing dominos on a board, showcasing different search algorithms and enabling users to explore various valid placement configurations based on their specific requirements.
