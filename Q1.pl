@@ -16,6 +16,7 @@
 % told.
 % ==========================================================================
 % The code:
+
 % Check if the cell is valid and empty
 valid_cell(Board, X, Y) :-
    member((X, Y), Board).
@@ -83,7 +84,8 @@ place_dominos_helper(Board, Positions, Dominos) :-
   \+ h_placement(ResultBoard2, _, _),
   \+ v_placement(ResultBoard2, _, _).
   
-% Solving the problem 
+  
+% Solving the problem (Main)
 
 solve(M, N, Bomb1, Bomb2, Dominos) :- 
   numlist(1, M, Rows),
